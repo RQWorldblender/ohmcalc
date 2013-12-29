@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.util.Log;
 import android.view.View;
 import android.widget.TabHost;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
@@ -30,9 +29,9 @@ public class MainActivity extends SherlockFragmentActivity {
 		
 		mTabManager.addTab(
 				mTabHost.newTabSpec("resistance").setIndicator("Resistance"),
-				com.sli.ohmcalc.ResistanceFragment.class, null);
+				com.sli.ohmcalc.ResistanceFragment.Resistance.class, null);
 		mTabManager.addTab(mTabHost.newTabSpec("power").setIndicator("Power"),
-				com.sli.ohmcalc.PowerFragment.class, null);
+				com.sli.ohmcalc.PowerFragment.Power.class, null);
 		
 		if (savedInstanceState != null) {
 			mTabHost.setCurrentTabByTag(savedInstanceState.getString("tab"));

@@ -27,10 +27,7 @@
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/textView1"
         android:ems="10"
-        android:inputType="numberDecimal" >
-
-        <requestFocus />
-    </EditText>
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/textView2"
@@ -104,6 +101,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text=""
+            android:textColor="@color/white"
             android:textSize="36sp" />
     </RelativeLayout>
 
