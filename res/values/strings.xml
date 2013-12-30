@@ -9,5 +9,12 @@
     <string name="resistance4">Resistance 4</string>
     <string name="calculate">Calculate</string>
     <string name="ohm_symbol">Ω</string>
+    
+    <string name="voltage">Voltage</string>
+    <string name="current">Current</string>
+    <string name="resistance">Resistance</string>
+    <string name="power">Power</string>
+    
+    <string name="clear">Clear</string>
 
 </resources>

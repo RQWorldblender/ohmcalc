@@ -3,6 +3,7 @@ package com.sli.ohmcalc;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,14 +30,14 @@ public class ResistanceFragment extends SherlockFragmentActivity {
 			View v = inflater.inflate(R.layout.activity_resistance, container,
 					false);
 
-			etResistance1 = (EditText) v.findViewById(R.id.etResistance1);
-			etResistance2 = (EditText) v.findViewById(R.id.etResistance2);
-			etResistance3 = (EditText) v.findViewById(R.id.etResistance3);
-			etResistance4 = (EditText) v.findViewById(R.id.etResistance4);
+			etResistance1 = (EditText) v.findViewById(R.id.etVoltage);
+			etResistance2 = (EditText) v.findViewById(R.id.etCurrent);
+			etResistance3 = (EditText) v.findViewById(R.id.etResistance);
+			etResistance4 = (EditText) v.findViewById(R.id.etPower);
 			bCalculate = (Button) v.findViewById(R.id.bCalculate);
 			tvOutput = (TextView) v.findViewById(R.id.tvOutput);
 
-			bCalculate.setOnClickListener(new View.OnClickListener() {
+			bCalculate.setOnClickListener(new OnClickListener() {
 
 				@Override
 				public void onClick(View v) {

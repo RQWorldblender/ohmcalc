@@ -19,7 +19,7 @@
         android:text="@string/resistance1" />
 
     <EditText
-        android:id="@+id/etResistance1"
+        android:id="@+id/etVoltage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView1"
@@ -34,17 +34,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/etResistance1"
+        android:layout_below="@+id/etVoltage"
         android:layout_marginTop="24dp"
         android:text="@string/resistance2" />
 
     <EditText
-        android:id="@+id/etResistance2"
+        android:id="@+id/etCurrent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView2"
         android:layout_alignBottom="@+id/textView2"
-        android:layout_alignLeft="@+id/etResistance1"
+        android:layout_alignLeft="@+id/etVoltage"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -53,17 +53,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/etResistance2"
+        android:layout_below="@+id/etCurrent"
         android:layout_marginTop="24dp"
         android:text="@string/resistance3" />
 
     <EditText
-        android:id="@+id/etResistance3"
+        android:id="@+id/etResistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView3"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/etResistance2"
+        android:layout_alignLeft="@+id/etCurrent"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -72,17 +72,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView3"
-        android:layout_below="@+id/etResistance3"
+        android:layout_below="@+id/etResistance"
         android:layout_marginTop="24dp"
         android:text="@string/resistance4" />
 
     <EditText
-        android:id="@+id/etResistance4"
+        android:id="@+id/etPower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView4"
         android:layout_alignBottom="@+id/textView4"
-        android:layout_alignLeft="@+id/etResistance3"
+        android:layout_alignLeft="@+id/etResistance"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -92,7 +92,7 @@
         android:layout_above="@+id/bCalculate"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/etResistance4" >
+        android:layout_below="@+id/etPower" >
 
         <TextView
             android:id="@+id/tvOutput"

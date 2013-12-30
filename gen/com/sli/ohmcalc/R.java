@@ -953,14 +953,15 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f04003d;
+        public static final int action_settings=0x7f04003e;
         public static final int bCalculate=0x7f04003b;
+        public static final int bClear=0x7f04003c;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
-        public static final int etResistance1=0x7f040034;
-        public static final int etResistance2=0x7f040036;
-        public static final int etResistance3=0x7f040038;
-        public static final int etResistance4=0x7f04003a;
+        public static final int etCurrent=0x7f040036;
+        public static final int etPower=0x7f04003a;
+        public static final int etResistance=0x7f040038;
+        public static final int etVoltage=0x7f040034;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
         public static final int normal=0x7f040001;
@@ -974,7 +975,7 @@ containing a value of this type.
         public static final int textView2=0x7f040035;
         public static final int textView3=0x7f040037;
         public static final int textView4=0x7f040039;
-        public static final int tvOutput=0x7f04003c;
+        public static final int tvOutput=0x7f04003d;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }
@@ -1055,11 +1056,16 @@ containing a value of this type.
         public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
         public static final int calculate=0x7f090013;
+        public static final int clear=0x7f090019;
+        public static final int current=0x7f090016;
         public static final int ohm_symbol=0x7f090014;
+        public static final int power=0x7f090018;
+        public static final int resistance=0x7f090017;
         public static final int resistance1=0x7f09000f;
         public static final int resistance2=0x7f090010;
         public static final int resistance3=0x7f090011;
         public static final int resistance4=0x7f090012;
+        public static final int voltage=0x7f090015;
     }
     public static final class style {
         /** 
