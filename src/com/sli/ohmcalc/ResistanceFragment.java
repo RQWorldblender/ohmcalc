@@ -20,10 +20,10 @@ public class ResistanceFragment extends SherlockFragmentActivity {
 
 	public static class Resistance extends SherlockFragment {
 
-		private static EditText etResistance1, etResistance2, etResistance3,
+		private EditText etResistance1, etResistance2, etResistance3,
 				etResistance4;
-		private static Button bCalculate;
-		private static TextView tvOutput;
+		private Button bCalculate, bClearRes;
+		private TextView tvOutput;
 
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class ResistanceFragment extends SherlockFragmentActivity {
 			etResistance3 = (EditText) v.findViewById(R.id.etResistance);
 			etResistance4 = (EditText) v.findViewById(R.id.etPower);
 			bCalculate = (Button) v.findViewById(R.id.bCalculate);
+			bClearRes = (Button) v.findViewById(R.id.bClearRes);
 			tvOutput = (TextView) v.findViewById(R.id.tvOutput);
 
 			bCalculate.setOnClickListener(new OnClickListener() {
@@ -74,6 +75,18 @@ public class ResistanceFragment extends SherlockFragmentActivity {
 							+ getString(R.string.ohm_symbol));
 				}
 
+			});
+			
+			bClearRes.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					etResistance1.setText("");
+					etResistance2.setText("");
+					etResistance3.setText("");
+					etResistance4.setText("");
+					tvOutput.setText("");
+				}
 			});
 
 			return v;

@@ -87,15 +87,6 @@
         android:ems="10"
         android:inputType="numberDecimal" />
 
-    <Button
-        android:id="@+id/bCalculate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:text="@string/calculate" />
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,5 +103,23 @@
             android:layout_centerVertical="true"
             android:textSize="36sp" />
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/bCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/bClearRes"
+        android:text="@string/calculate" />
+
+    <Button
+        android:id="@+id/bClearRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bCalculate"
+        android:layout_alignBottom="@+id/bCalculate"
+        android:layout_alignParentRight="true"
+        android:text="@string/clear" />
 
 </RelativeLayout>
